@@ -399,7 +399,9 @@ public class ChipBici {
         }
         return chip;
     }
-
+     /**
+     * @return Devuelve una cadena formateada.
+     */
     @Override
     public String toString() {
         return String.format("{ NS: %d; %s; fw: %.1f; $s; %2.f km totales; Alquiler actual: %s ,%.2f km; Último alquiler: %s , %s , %.2f }",
