@@ -29,18 +29,18 @@ public class ChipBici {
     private final int numSerie;
     private final LocalDate fechaAdquisicion;
     //Atributos de objeto
+    private LocalDateTime fechaHoraAlquilerActual = null;
+    private LocalDateTime fechaHoraInicio = null;
+    private LocalDateTime fechaHoraFin = null;
+    private DateTimeFormatter FORMATO_FECHA = DateTimeFormatter.ofPattern("dd/MM/YYYY");
+    //Atributos de la clase
+    private double kmRecorridosActuales = 0;
+    private double kmRecorridosDuranteAlq = 0;
     private static int siguienteNumeroSerie = 1;
     private double versionFirmware;
     private int revisionFirmware;
     private boolean estaAlquilada = false;
     private double kmTotales = 0;
-    private LocalDateTime fechaHoraAlquilerActual = null;
-    private double kmRecorridosActuales = 0;
-    private LocalDateTime fechaHoraInicio = null;
-    private LocalDateTime fechaHoraFin = null;
-    private double kmRecorridosDuranteAlq = 0;
-    private DateTimeFormatter FORMATO_FECHA = DateTimeFormatter.ofPattern("dd/MM/YYYY");
-    //Atributos de la clase
     private static int cantidadTotalBicis = 0;
     private static int cantidadBicisAlq = 0;
     private static double cantidadTotalKmBicis = 0;
